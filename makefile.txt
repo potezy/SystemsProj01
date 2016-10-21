@@ -1,9 +1,7 @@
-GCC = gcc -g -c 
 
-compile: linkedlist.c player.c linkedlist.o player.o
-	$(GCC) linked.c player.c
-	gcc -g -o myTunes main.c linkedlist.o player.o 
-	./myTunes
+make: linkedlist.c player.c main.c
+        gcc linkedlist.c player.c -o main.c
+	./myTune
 
 clean:
 	rm *~
