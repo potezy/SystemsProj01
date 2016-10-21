@@ -70,7 +70,7 @@ void  print_lib(){
 
 song_node *delete_song(song_node *song){
     song_node * list = table[(song->name)[0] -97];
-    return removeNode(list , song);
+    return remove_node(list , song);
 }
 
 void delete_player(){
