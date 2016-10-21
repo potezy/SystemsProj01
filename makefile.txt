@@ -1,0 +1,10 @@
+GCC = gcc -g -c 
+
+compile: linkedlist.c player.c linkedlist.o player.o
+	$(GCC) linked.c player.c
+	gcc -g -o myTunes main.c linkedlist.o player.o 
+	./myTunes
+
+clean:
+	rm *~
+	rm *.o
