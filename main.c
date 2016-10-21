@@ -46,10 +46,10 @@ song_node *b;
   print_letter("a");
   printf("search_song\n");
   song_node * ret = search_song("closer");
-  print_node(ret);
+  print_list(ret);
   printf("search_artist_lib\n");
   song_node * ret2 = search_artist("imagine dragons");
-  print_node(ret2);
+  print_list(ret2);
   delete_player();
   print_lib();
 
