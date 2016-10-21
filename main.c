@@ -50,7 +50,7 @@ song_node *b;
   printf("search_artist_lib\n");
   song_node * ret2 = search_artist("imagine dragons");
   print_node(ret2);
-  free_lib();
+  delete_player();
   print_lib();
 
 }
