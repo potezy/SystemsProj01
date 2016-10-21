@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "library.h"
+#include "player.h"
 
 void main() {
 
@@ -9,7 +9,7 @@ void main() {
   a = insert_front(a, b);
   print_list(a);   
   printf("search_artist\n");
-  print_node(search_artist(a, "can artist"));
+  print_node(search_artist(a, "artist"));
   printf(\n");
   printf("search_song\n");
   print_node(search_name(a, "a"));
@@ -25,22 +25,18 @@ void main() {
   
   printf("LIBRARY FUNCTIONS\n");
   printf("add\n");
-  add("e", "Ean artist");
-  add("d", "Dan artist");
-  add("someone like you","adele");  
-  add("hello","adele");
-  add("wherever i go","one republic");
-  add("closer","bob");
+  add("e", "eartist");
+  add("d", "dartist");
   add("closer","chainsmokers"); 
   printf("print_lib\n");
   print_lib();
-  printf("printl_etter\n");
+  printf("printl_letter\n");
   print_letter("a");
   printf("search_song\n");
   song_node * ret = search_song("closer");
   print_node(ret);
   printf("search_artist_lib\n");
-  song_node * ret2 = search_artist_lib("one republic");
+  song_node * ret2 = search_artist("imagine dragons");
   print_node(ret2);
   free_lib();
   print_lib();
