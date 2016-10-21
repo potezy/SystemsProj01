@@ -77,7 +77,7 @@ void delete_player(){
     int i;
     for(int i = 0; i < 26; i ++){
         while(table[i]){
-            freeList(table[i]);
+            free_list(table[i]);
         }
     }
     
