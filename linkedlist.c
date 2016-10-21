@@ -8,7 +8,7 @@ song_node * insert_front(song_node * list, song_node * song){
     return song;
 }
 
-song_node * insert_order(song_node * list , song_node * song){
+/*song_node * insert_order(song_node * list , song_node * song){
     song_node * next = list;
     while(strcmp(list->artist,song->artist) < 0){
         list = list->next;
@@ -16,7 +16,7 @@ song_node * insert_order(song_node * list , song_node * song){
     
 
 }
-
+*/
 void * print_list(song_node * list){
     song_node * temp = list;
     printf("[");
