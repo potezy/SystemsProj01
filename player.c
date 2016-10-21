@@ -17,7 +17,7 @@ void  add(char * a ,char * n){
 song_node * search_song(char *name){
     int i;
     song_node *temp;
-    for(int i = 0; i < 26; i ++){
+    for( i = 0; i < 26; i ++){
         temp = return_song(table[i] , name);
         if (temp) return temp;
     }
@@ -29,7 +29,7 @@ song_node * search_song(char *name){
 song_node * search_artist(char *artist){
     int i;
     song_node *temp;
-    for(int i = 0; i < 26; i ++){
+    for(i = 0; i < 26; i ++){
         temp = return_artist(table[i] , artist);
         if (temp) return temp;
     }
@@ -52,7 +52,7 @@ void print_letter(char * letter){
 
 void  print_lib(){
     int i;
-    for(int i = 0; i< 26; i ++){
+    for(i = 0; i< 26; i ++){
         char c = i + 97;
         print_letter(c );
     }
@@ -75,7 +75,7 @@ song_node *delete_song(song_node *song){
 
 void delete_player(){
     int i;
-    for(int i = 0; i < 26; i ++){
+    for(i = 0; i < 26; i ++){
         while(table[i]){
             free_list(table[i]);
         }
