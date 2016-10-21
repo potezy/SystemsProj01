@@ -3,6 +3,18 @@
 #include "player.h"
 
 void main() {
+  song_node *a;
+  a = (song_node*) malloc( sizeof(song_node) );
+  strcpy(a->name, "name");
+  strcpy(a->artist, "artist");
+  print_list(a);
+
+
+song_node *b;
+  b = (song_node*) malloc( sizeof(song_node) );
+  strcpy(b->name, "sampleName");
+  strcpy(b->artist, "sampleArtist");
+  print_list(b);
 
   printf("LIST FUNCTIONS\n");
   printf("insert_front\n");
